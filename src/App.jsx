@@ -1,18 +1,12 @@
-import { useState } from 'react'
-
 import './App.css'
-import { HomePage } from './pages/HomePage'
 
-function App() {
 
+export const App = () => {
 
   return (
     <>
-    
-      <HomePage/>
-    
+    <h3>Hello World!</h3>
+
     </>
   )
-}
-
-export default App
+};
