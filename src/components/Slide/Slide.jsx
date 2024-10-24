@@ -58,7 +58,7 @@ export const Slide = () => {
 
                 <div className='div-img'>
                     <div className='Ornament'>
-                        <img src="./src/assets/Ornament 11.png" alt="Ornament" />
+                        <img src="./src/assets/Ornament 11.png" alt="Ornament"className='Orn' />
                         
                     </div>
 
