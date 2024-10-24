@@ -16,7 +16,26 @@ export const Slide = () => {
 
     return ( <>
     
-        <Swiper>
+        <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            pagination={{clickable: true,
+                renderBullet: (index, bullet) => {
+                    return  `<span class="${bullet}" style="background-color: #C92071"></span>`;
+                }
+            }}
+                autoplay = 
+
+                {{
+                    delay: 10000,
+                    disableOnInteraction: false 
+                }}
+
+                loop = {true}
+                navigation = {false}
+        
+        
+        >
 
         {data.map((item) => (
 
