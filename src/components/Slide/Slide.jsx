@@ -1,15 +1,16 @@
 import './slide.css'
-import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Button } from '../Button/Button'
 
 export const Slide = () => {
     const data = 
     [
     
-    {id: '1' , image: './src/assets/White-Sneakers-PNG-Clipart 1.png'},
-    {id: '2' , image: './src/assets/White-Sneakers-PNG-Clipart 1.png'},
-    {id: '3' , image: './src/assets/White-Sneakers-PNG-Clipart 1.png'},
-    {id: '4' , image: './src/assets/White-Sneakers-PNG-Clipart 1.png'}
+    {id: '1' , image: './src/assets/slide-image/White-Sneakers-PNG-Clipart 1.png'},
+    {id: '2' , image: './src/assets/slide-image/White-Sneakers-PNG-Clipart 1.png'},
+    {id: '3' , image: './src/assets/slide-image/White-Sneakers-PNG-Clipart 1.png'},
+    {id: '4' , image: './src/assets/slide-image/White-Sneakers-PNG-Clipart 1.png'}
 
     ]
 
@@ -19,7 +20,7 @@ export const Slide = () => {
         <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            pagination={{clickable: true,
+            pagination={{clickable: false,
                 renderBullet: (index, bullet) => {
                     return  `<span class="${bullet}" style="background-color: #C92071"></span>`;
                 }
@@ -27,7 +28,7 @@ export const Slide = () => {
                 autoplay = 
 
                 {{
-                    delay: 10000,
+                    delay: 5000,
                     disableOnInteraction: false 
                 }}
 
@@ -53,12 +54,12 @@ export const Slide = () => {
                     <p className='p-abaixo'>
                     Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.
                     </p>
-
+                    <Button label="Ver Ofertas" size="x-medium" style="primary" />
                 </div>
 
                 <div className='div-img'>
                     <div className='Ornament'>
-                        <img src="./src/assets/Ornament 11.png" alt="Ornament"className='Orn' />
+                        <img src="./src/assets/slide-image/Ornament 11.png" alt="Ornament"className='Orn' />
                         
                     </div>
 

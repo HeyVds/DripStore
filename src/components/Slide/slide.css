@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 .slide{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25rem;
-    background-color: #F5F5F5;
+    height: 42.5625rem;
+    top: 12.125rem;
+    background-color: var(--light-gray-3);
 }
 
 .div-img {
@@ -17,7 +22,7 @@
 .Ornament{
     display: flex;
     margin-bottom: 17.5rem; 
-    transform: translate(40.625rem);
+    transform: translate(43.75rem, -4.375rem);
   }
 
   .Orn {
@@ -28,7 +33,7 @@
   .Slide-item {
     transform: rotate(20deg); 
     transition: transform 0.5s ease;
-    width: 37.5rem;
+    width: 42.5rem;
   }
 
 
@@ -44,7 +49,8 @@
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: .0469rem;
-  color: #F6AA1C;
+  color: var(--warning);
+  font-family: 'Inter';
    }
 
    
@@ -52,6 +58,7 @@
     display: flex;
     flex-direction: column;
     width: 35%;
+    font-family: 'Inter';
 
     .Text-h1 {
       
@@ -59,6 +66,8 @@
       font-weight: 800;
       line-height: 4.125rem;  
       letter-spacing: .0625rem;
+      font-family: 'Inter';
+      color: var(--dark-gray);
     }
     
         .p-abaixo {
@@ -66,6 +75,7 @@
           font-weight: 400;
           line-height: 2.125rem;
           letter-spacing: .0469rem;
-          color: #474747;
+          color: var(--dark-gray-2);
+          font-family: 'Inter';
         } 
   }
