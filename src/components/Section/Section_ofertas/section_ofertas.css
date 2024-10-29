@@ -19,7 +19,7 @@
         font-weight: 700;
         line-height: 1.375rem;
         letter-spacing: .0469rem;
-        font-family: 'inter';
+        font-family: 'Inter';
         color: var(--primary);
     }
 
@@ -28,7 +28,7 @@
         font-weight: 700;
         line-height: 50px;
         letter-spacing: 1px;
-        font-family: 'inter';
+        font-family: 'Inter';
         color: var(--dark-gray-2);
 
     }
@@ -38,7 +38,7 @@
         font-weight: 400;
         line-height: 1.75rem;
         letter-spacing: 0.75px;
-        font-family: 'inter';
+        font-family: 'Inter';
         color: var(--dark-gray-2);
     }
 }
