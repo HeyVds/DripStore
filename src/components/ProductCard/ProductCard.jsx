@@ -2,14 +2,14 @@ import tenisImg from '../../assets/slide-image/product.png';
 
 export const ProductCard = (props) => {
   return (
-    <div className={`h-[439px] md:w-72 w-full flex flex-col hover:cursor-pointer`}>
+    <div className={`flex flex-col items-center mb-10 cursor-pointer`}>
       <div
         className={`
-            xl:w-full
-            h-80 
+            w-72   
+            h-80
             bg-white 
-            rounded 
-            shadow-[6px_16px_30px_0px_rgba(105,98,98,0.05)] 
+            rounded-lg 
+            shadow-md   
             flex
             justify-center 
             items-center
@@ -19,26 +19,23 @@ export const ProductCard = (props) => {
         <span
           className="
                 absolute 
-                top-5
-                left-5 
-                px-4 
+                top-4
+                left-4
+                px-3 
                 py-1 
-                flex 
-                justify-center 
-                items-center 
                 rounded-full 
                 bg-[#E7FF86]
-                text-sm
+                text-xs
                 font-bold
                 text-[#474747]
             "
         >
           {props.discountPercentual}% OFF
         </span>
-        <img className="" src={tenisImg} alt="" />
+        <img className="w-60" src={tenisImg} alt="" />
       </div>
-      <div className="flex flex-col gap-1">
-        <span className="text-[#8F8F8F] text-xs font-bold pt-3">
+      <div className="lex flex-col gap-1 pt-3">
+        <span className="text-lightGray font-bold text-[12px] w-9 h-6">
           {props.category}
         </span>
         <p className="text-[#474747] text-2xl">{props.productName}</p>
