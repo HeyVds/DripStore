@@ -1,4 +1,4 @@
-import { Card } from '../ProductCard/ProductCard';
+import { ProductCard } from '../ProductCard/ProductCard';
 import { cardsInfo } from '../../utils/cardsMock';
 import { Subtitles } from '../Subtitles/Subtitles';
 
@@ -14,7 +14,7 @@ export const ProductListing = () => {
       <div className="w-full grid gap-x-4 gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
         {cardsInfo.map((card) => {
           return (
-            <Card
+            <ProductCard
               key={card.id}
               discountPercentual={card.discountPercentual}
               category={card.category}
