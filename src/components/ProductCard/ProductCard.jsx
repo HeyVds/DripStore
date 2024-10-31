@@ -1,14 +1,15 @@
-import tenisImg from '../../assets/slide-image/product.png';
+import tenisImg from "../../assets/slide-image/product.png";
 
 export const ProductCard = (props) => {
   return (
-    <div className={`flex flex-col items-center mb-10 cursor-pointer`}>
+    <div className={`flex flex-col items-center mb-5 cursor-pointer`}
+    >
       <div
         className={`
-            w-72   
-            h-80
+            w-[350px]
+            h-[439px]
             bg-white 
-            rounded-lg 
+            rounded 
             shadow-md   
             flex
             justify-center 
@@ -16,26 +17,31 @@ export const ProductCard = (props) => {
             relative
         `}
       >
-        <span
-          className="
+        {props.discountPercentual && (
+          <span
+            className="
                 absolute 
-                top-4
-                left-4
+                top-2
+                left-2
                 px-3 
-                py-1 
+                py-2 
+                max-w-44
                 rounded-full 
                 bg-[#E7FF86]
                 text-xs
                 font-bold
                 text-[#474747]
             "
-        >
-          {props.discountPercentual}% OFF
-        </span>
-        <img className="w-60" src={tenisImg} alt="" />
+          >
+            {props.discountPercentual}% OFF
+          </span>
+        )}
+        <div className="flex items-center justify-center relative -top-3 -left-3">
+        <img className="" src={tenisImg} alt="" />
+        </div>
       </div>
-      <div className="lex flex-col gap-1 pt-3">
-        <span className="text-lightGray font-bold text-[12px] w-9 h-6">
+      <div className="flex flex-col gap-1 pt-3">
+        <span className="text-[#8F8F8F] font-bold text-[12px] w-9 h-6">
           {props.category}
         </span>
         <p className="text-[#474747] text-2xl">{props.productName}</p>

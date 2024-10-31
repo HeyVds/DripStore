@@ -11,12 +11,12 @@ export const ProductListing = () => {
           Ver todos ➝
         </a>
       </div>
-      <div className="w-full grid gap-x-4 gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-        {cardsInfo.map((card) => {
+      <div className="w-full grid gap-1 grid-cols-1 sm:grid-cols-1 lg:grid-cols-4">
+        {cardsInfo.map((card, index) => {
           return (
             <ProductCard
               key={card.id}
-              discountPercentual={card.discountPercentual}
+              discountPercentual={index < 2 ? card.discountPercentual : null}
               category={card.category}
               productName={card.productName}
               discountPrice={card.discountPrice}
