@@ -1,12 +1,10 @@
-import './App.css'
-import { HomePage } from './pages/HomePage';
-
+import "./App.css";
+import { RoutesApp } from "./Routes";
 
 export const App = () => {
-
   return (
     <>
-    <HomePage></HomePage>
+      <RoutesApp />
     </>
-  )
+  );
 };
