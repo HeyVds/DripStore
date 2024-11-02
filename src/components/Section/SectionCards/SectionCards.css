@@ -1,23 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 z.collection-section {
-    padding: 20px;
+    padding: 10px;
     background-color: #f9f9f9;
     text-align: center;
+    font-family: 'Inter';
+    
   }
+  
   
   .collection-section h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #333;
+    font-family: 'Inter';
+  
   }
   
   .collection1, .collection2, .collection3 {
+    
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
+    font-family: 'Inter';
   }
   
   .collection-card {
     position: relative;
-    width: 405px;
+    width: 395px;
     height: 207px;
     border-radius: 10px;
     overflow: hidden;
@@ -29,6 +39,8 @@ z.collection-section {
     justify-content: flex-end;
     padding: 15px;
     color: #fff;
+    font-family: 'Inter';
+    
   }
   
   .collection-card:hover {
@@ -45,13 +57,7 @@ z.collection-section {
     z-index: 0;
   }
   
-  .collection-card h3 {
-    position: relative;
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #fff;
-    z-index: 1;
-  }
+  
   
   .collection-card p {
     position: absolute;
@@ -62,24 +68,26 @@ z.collection-section {
     font-size: 0.9rem;
     font-weight: bold;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     z-index: 2;
   }
   
   .collection-card button {
     position: relative;
-    background-color: #ff5a5f;
-    color: #fff;
+    color: var(--primary);
+    background-color: var(--white);
     border: none;
     padding: 10px 15px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 1;
+    width: 50%;
   }
   
   .collection-card button:hover {
-    background-color: #ff3d47;
+    background-color: var(--primary);
+    color: var(--white);
   }
-  
