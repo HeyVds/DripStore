@@ -1,4 +1,12 @@
+import { useState, useRef } from 'react';
+import './sectionSlideTenis.css'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { Navigation, Pagination } from "swiper/modules";
+import 'boxicons'
+
 "./slideTenis.css"
+
 
 export const SlideTenis = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,6 +58,7 @@ export const SlideTenis = () => {
     };
 
     return (
+        <div>
         <div className="carousel-container">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -65,7 +74,7 @@ export const SlideTenis = () => {
               </SwiperSlide>
             ))}
     
-    <div className="thumbnails">
+        <div className="thumbnails">
               {images.map((src, index) => (
                 <img
                   key={index}
@@ -79,6 +88,62 @@ export const SlideTenis = () => {
               ))}
             </div>
           </Swiper>
- </div>    
+        </div>  
+ 
+ <div className="text-content">
+ <h1>Tênis Nike Revolution 6 Next Nature Masculino</h1>
+ <p className="product-category">Casual | Nike | REF: 38416711</p>
+ <div className="product-rating">
+   <span>⭐⭐⭐⭐⭐</span> <span className="rating-value">4.7 <box-icon name='star' color="white" background="white" size="18px"></box-icon></span>{" "}
+   <span className='avaliacoes'>(90 avaliações)</span>
+ </div>
+
+ <div className="product-price">
+   <span className="current-price">R$ 219,00</span>
+   <span className="old-price">R$ 219,00</span>
+ </div>
+   <p className='description'>Descrição do produto</p>
+
+ <p className="product-description">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+   eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ </p>
+
+ <div className="product-size">
+   <p>Tamanho</p>
+   <div className="size-options">
+     {[39, 40, 41, 42, 43].map((size) => (
+       <button
+         key={size}
+         className={selectedSize === size ? "selected" : ""}
+         onClick={() => handleSizeSelect(size)}
+       >
+         {size}
+       </button>
+     ))}
+   </div>
+ </div>
+
+ {/* Cor */}
+ <div className="product-color">
+   <p>Cor</p>
+   <div className="color-options">
+     {["red", "orange", "gray", "green"].map((color) => (
+       <button
+         key={color}
+         className={`color ${color} ${
+           selectedColor === color ? "selected" : ""
+         }`}
+         onClick={() => handleColorSelect(color)}
+       ></button>
+     ))}
+   </div>
+ </div>
+
+    <button className="buy-button" onClick={handleBuyClick}>
+   COMPRAR
+    </button>
+    </div>
+        </div>
     )
 }
