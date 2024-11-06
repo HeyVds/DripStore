@@ -48,4 +48,37 @@ export const SlideTenis = () => {
         setSelectedColor(null);
       }
     };
+
+    return (
+        <div className="carousel-container">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={false}
+            onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            className="carousel-images"
+          >
+            {images.map((src, index) => (
+              <SwiperSlide key={index}>
+                <img src={src} alt={`Imagem ${index + 1}`} className="active" />
+              </SwiperSlide>
+            ))}
+    
+    <div className="thumbnails">
+              {images.map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`Miniatura ${index + 1}`}
+                  onClick={() => goToImage(index)}
+                  className={
+                    index === currentIndex ? "thumbnail active" : "thumbnail"
+                  }
+                />
+              ))}
+            </div>
+          </Swiper>
+ </div>    
+    )
 }
