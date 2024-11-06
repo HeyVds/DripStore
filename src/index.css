@@ -22,7 +22,3 @@
   --light-gray-3: #f5f5f5;
   --white: #ffffff;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
