@@ -1,11 +1,9 @@
 import { useState, useRef } from 'react';
-import './sectionSlideTenis.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { Navigation, Pagination } from "swiper/modules";
 import 'boxicons'
 
-"./slideTenis.css"
+import "./slideTenis.css"
 
 
 export const SlideTenis = () => {
