@@ -4,7 +4,7 @@ import tenisImg from "../../assets/slide-image/product.png";
 export const ProductCard = (props) => {
   return (
     <div className="product-card">
-      <div lassName="product-card-image">
+      <div className="product-card-image">
       {props.discountPercentual && (
       <span className="discount-badge">
       {props.discountPercentual}% OFF
