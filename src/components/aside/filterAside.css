@@ -1,0 +1,39 @@
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #C92071; 
+  width: 22px; 
+  height: 22px; 
+  border: 2px solid #C92071; 
+  border-radius: 1px; 
+  outline: none; 
+  cursor: pointer; 
+  margin: auto 10px;
+  
+}
+
+.titleAside {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474747;
+}
+
+.labelCheked {
+    font-family: "inter";
+   font-size: 14px;
+   letter-spacing: 0.25px;
+   gap: .625rem;
+   line-height: 34px;
+   color: #474747;
+   font-weight: 500;
+   margin: auto;
+}
+
+.titleChecked{
+    font-size: 14px;
+    font-weight: 700;
+    color:#474747;
+    font-family: "inter";
+   }
