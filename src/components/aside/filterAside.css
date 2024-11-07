@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.asideClass {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 308px;
+    height: 720px;
+}
+
+.divAside {
+   margin: 5px 5px;
+}
+
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -16,17 +31,16 @@ input[type="radio"] {
     font-family: "inter";
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
-    color: #474747;
+    color: var(--dark-gray-2);
 }
 
 .labelCheked {
-    font-family: "inter";
+   font-family: "inter";
    font-size: 14px;
    letter-spacing: 0.25px;
    gap: .625rem;
    line-height: 34px;
-   color: #474747;
+   color: var(--dark-gray-2);
    font-weight: 500;
    margin: auto;
 }
@@ -34,6 +48,6 @@ input[type="radio"] {
 .titleChecked{
     font-size: 14px;
     font-weight: 700;
-    color:#474747;
+    color: var(--dark-gray-2);
     font-family: "inter";
    }
