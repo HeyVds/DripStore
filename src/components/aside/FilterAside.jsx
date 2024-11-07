@@ -1,4 +1,5 @@
-
+import React, { useState } from 'react';
+import "./filterAside.css"
 
 export const FilterAside = () => {
     const marka = [
@@ -78,10 +79,10 @@ export const FilterAside = () => {
 
 
       return (
-        <aside  style={{ padding: '20px', border: '1px solid #ccc', width: '200px' }}>
+        <aside className='asideClass'>
              <h2 className='titleAside'>Filtrar por</h2>
       <hr />
-      <div>
+      <div className='divAside'>
         <h3 className='titleChecked'>Marka</h3>
         {marka.map((marka) => (
           <div key={marka.name}>
@@ -99,7 +100,7 @@ export const FilterAside = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: '20px', color: 'black' }}>
+      <div className='divAside'>
       <h3 className='titleChecked'>Categoria</h3>
       {categoria.map((categ) => (
           <div key={categ.name}>
@@ -117,7 +118,7 @@ export const FilterAside = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: '20px', color: 'black' }}>
+      <div className='divAside'>
       <h3 className='titleChecked'>Gênero</h3>
       {genero.map((gene) => (
           <div key={gene.name}>
@@ -135,7 +136,7 @@ export const FilterAside = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: '20px', color: 'black' }}>
+      <div className='divAside'>
       <h3 className='titleChecked'>Estado</h3>
       {estado.map((estad) => (
           <div key={estad.name}>

@@ -1,13 +1,20 @@
-import { ProductListing } from "../components/productListing/ProductListing"
-import { SectionOfertas } from "../components/Section/Section_ofertas/SectionOfertas"
+// import { ProductListing } from "../components/productListing/ProductListing"
+// import { SectionOfertas } from "../components/Section/Section_ofertas/SectionOfertas"
+// import { Slide } from "../components/Slide/Slide"
+
+import { FilterAside } from "../components/aside/FilterAside"
+
+
+// import { SlideTenis } from "../components/SlideTenis/SlideTenis"
 
 export const HomePage = () => {
     return (
         <>
-        <Slide></Slide> 
+        {/* <SlideTenis></SlideTenis> */}
+        {/* <Slide></Slide>
         <ProductListing></ProductListing>
-        <Slide></Slide>
-        <SectionOfertas></SectionOfertas>
+        <SectionOfertas></SectionOfertas> */}
+        <FilterAside></FilterAside>
 
         </>
     )
