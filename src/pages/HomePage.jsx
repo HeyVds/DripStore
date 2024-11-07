@@ -5,8 +5,8 @@ export const HomePage = () => {
     return (
         <>
         <Slide></Slide> 
+        
         <ProductListing></ProductListing>
-        <Slide></Slide>
         <SectionOfertas></SectionOfertas>
 
         </>
