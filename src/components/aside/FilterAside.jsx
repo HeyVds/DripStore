@@ -75,5 +75,86 @@ export const FilterAside = () => {
           [name]: false,
         });
       };
+
+
+      return (
+        <aside  style={{ padding: '20px', border: '1px solid #ccc', width: '200px' }}>
+             <h2 className='titleAside'>Filtrar por</h2>
+      <hr />
+      <div>
+        <h3 className='titleChecked'>Marka</h3>
+        {marka.map((marka) => (
+          <div key={marka.name}>
+            <label className='labelCheked'>
+              <input
+                type="checkbox"
+                name={marka.name}
+                checked={!!selectedMarkas[marka.name]}
+                onChange={(e) => {handleCheckboxChange(e, setSelectedMarkas)}}
+                
+              />
+              {marka.label}
+            </label>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: '20px', color: 'black' }}>
+      <h3 className='titleChecked'>Categoria</h3>
+      {categoria.map((categ) => (
+          <div key={categ.name}>
+            <label className='labelCheked'>
+              <input
+                type="checkbox"
+                name={categ.name}
+                checked={!!selectedCategoria[categ.name]}
+                onChange={(e) => {handleCheckboxChange(e, setSelectedCategoria)}}
+                 
+              />
+              {categ.label}
+            </label>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: '20px', color: 'black' }}>
+      <h3 className='titleChecked'>Gênero</h3>
+      {genero.map((gene) => (
+          <div key={gene.name}>
+            <label className='labelCheked'>
+              <input
+                type="checkbox"
+                name={gene.name}
+                checked={!!selectedGenero[gene.name]}
+                onChange={(e) => {handleCheckboxChange(e, setSelectedGenero)}}
+                
+              />
+              {gene.label}
+            </label>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: '20px', color: 'black' }}>
+      <h3 className='titleChecked'>Estado</h3>
+      {estado.map((estad) => (
+          <div key={estad.name}>
+            <label className='labelCheked'>
+              <input
+                type="radio"
+                name="estado"
+                value={estad.name}
+                checked={!!selectedEstado[estad.name] || true}
+                onChange={handleRadioChange}
+                 
+              />
+              {estad.label}
+            </label>
+          </div>
+        ))}
+      </div>
+        </aside>
+      )
     
 }
+
