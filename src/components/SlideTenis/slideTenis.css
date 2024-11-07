@@ -1,32 +1,37 @@
+.flex-body {
+    display: flex;
+    margin: 20px;
+    height: 700px;
+    justify-content: center;
+}
+
 .carousel-container {
     display: flex;
-    gap: 20px;
-    max-width: 1200px;
+    width: 60%;;
     margin: 0 auto;
-    background-color: #f8f9fb;
+    background-color: #E2E3FF;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
   }
   
   
   .carousel-images {
-    position: relative;
-    width: 80%;
+    position: absolute;
+    width: 85%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
    
   }
-  
-  
-  
-  .carousel-images img {
+
+  .active {
     width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
+    height: 500px;
+    object-fit: cover;
   }
+  
+  
   
   .carousel-container .swiper-button-next,
   .carousel-container .swiper-button-prev {
@@ -48,14 +53,13 @@
     justify-content: center;
     width: 150px;
     height: 150px;
-    cursor: pointer;
     opacity: 0.7;
     border-radius: 5px;
   }
   
   .thumbnail.active {
     opacity: 1;
-    border: 2px solid #d91467;
+    border: 2px solid var(--primary);
   }
   
   .text-content {
@@ -108,7 +112,7 @@
   .current-price {
     font-size: 24px;
     font-weight: bold;
-    color: #474747;
+    color: var(--dark-gray-2);
     margin-right: 10px;
   }
   
@@ -124,13 +128,13 @@
   
   .product-description {
     font-size: 14px;
-    color: #474747;
+    color: var(--dark-gray-2);
     margin: 10px 0;
   }
   
   .product-size,
   .product-color {
-    color: #8F8F8F;
+    color: var(--light-gray);
     font-size: 14px;
     font-weight: 700;
     margin-top: 15px;
@@ -149,12 +153,12 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
-    background-color: white;
+    background-color:  var(--white);
   }
   
   .size-options button.selected {
-    background-color: #d91467;
-    color: white;
+    background-color: var(--primary);
+    color:  var(--white);;
     font-weight: 700;
   }
   
@@ -166,39 +170,29 @@
   
   
   .color-options .color.selected {
-    border: 2px solid white; 
+    border: 2px solid  var(--white);; 
     box-shadow: 0 0 0 2px #d91467; 
   }
   
   .color {
     &.red {
-      background-color: red;
+      background-color: var(--primary);
     }
     &.orange {
-      background-color: orange;
+      background-color: var(--warning);
     }
     &.gray {
-      background-color: gray;
+      background-color: var(--light-gray);
     }
     &.green {
-      background-color: green;
+      background-color: var(--success);
     }
   }
   
   
   .buy-button {
-    width: 40%;
-    background-color: #ffa500;
-    color: white;
-    font-size: 16px;
-    padding: 12px 0;
-    border: none;
-    border-radius: 5px;
+    color: var(--white);
+    padding: 30px 0;
     cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .buy-button:hover {
-    background-color: #ff8c00;
   }
   

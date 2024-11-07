@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from "swiper/modules";
+import { Button } from '../Button/Button';
 import 'boxicons'
 
 import "./slideTenis.css"
@@ -12,10 +13,10 @@ export const SlideTenis = () => {
     const [selectedColor, setSelectedColor] = useState(null);
   
     const images = [
-      "src/assets/imagesProduct/slide1.png", 
-      "src/assets/imagesProduct/slide2.png", 
-      "src/assets/imagesProduct/slide3.png",
-      "src/assets/imagesProduct/slide4.png",
+      "src/assets/SlideTenis-image/slide1.png", 
+      "src/assets/SlideTenis-image/slide2.png", 
+      "src/assets/SlideTenis-image/slide3.png",
+      "src/assets/SlideTenis-image/slide4.png",
     ];
   
     const colorToIndexMap = {
@@ -56,7 +57,7 @@ export const SlideTenis = () => {
     };
 
     return (
-        <div>
+        <div className='flex-body'>
         <div className="carousel-container">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -137,10 +138,9 @@ export const SlideTenis = () => {
      ))}
    </div>
  </div>
-
-    <button className="buy-button" onClick={handleBuyClick}>
-   COMPRAR
-    </button>
+  <button onClick={handleBuyClick} className='buy-button'>
+    <Button label="COMPRAR" size="x-medium" style="warning"/>
+  </button>
     </div>
         </div>
     )
