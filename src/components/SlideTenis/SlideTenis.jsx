@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from "swiper/modules";
 import { Button } from '../Button/Button';
-import 'boxicons'
+// import 'boxicons'
 
 import "./slideTenis.css"
 
