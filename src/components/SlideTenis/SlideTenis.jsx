@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from "swiper/modules";
 import { Button } from '../Button/Button';
-
+import { Icon } from '@iconify/react';
 
 import "./slideTenis.css"
 
@@ -93,7 +93,7 @@ export const SlideTenis = () => {
  <h1>Tênis Nike Revolution 6 Next Nature Masculino</h1>
  <p className="product-category">Casual | Nike | REF: 38416711</p>
  <div className="product-rating">
-   <span>⭐⭐⭐⭐⭐</span> <span className="rating-value">4.7 <box-icon name='star' color="white" background="white" size="18px"></box-icon></span>{" "}
+   <span>⭐⭐⭐⭐⭐</span> <span className="rating-value">4.7 <Icon icon="material-symbols-light:star" /></span>
    <span className='avaliacoes'>(90 avaliações)</span>
  </div>
 
