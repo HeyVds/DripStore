@@ -39,9 +39,9 @@ export const Header = () => {
       <div className="flex flex-row justify-between w-full px-40">
         <div className="flex flex-row gap-5">
           <Link to="/">Home</Link>
-          <Link to="/">Home</Link>
-          <Link to="/">Home</Link>
-          <Link to="/">Home</Link>
+          <Link to="/">Produtos</Link>
+          <Link to="/">Categorias</Link>
+          <Link to="/">Meus Pedidos</Link>
         </div>
       </div>
     </header>
