@@ -1,11 +1,11 @@
-import { ProductCard } from '../ProductCard/ProductCard';
-import { cardsInfo } from '../../utils/cardsMock';
-import { Subtitles } from '../Subtitles/Subtitles';
-import './productlisting.css';
+import { ProductCard } from "../ProductCard/ProductCard";
+import { cardsInfo } from "../../utils/cardsMock";
+import { Subtitles } from "../Subtitles/Subtitles";
+import "./productlisting.css";
 
 export const ProductListing = () => {
-  return ( 
-    <main className="product-listing">
+  return (
+    <div className="product-listing">
       <div className="header">
         <Subtitles type="secondary">Produtos em alta</Subtitles>
         <a href="/produtos" className="view-all-link">
@@ -26,6 +26,6 @@ export const ProductListing = () => {
           />
         ))}
       </div>
-    </main>
+    </div>
   );
 };
