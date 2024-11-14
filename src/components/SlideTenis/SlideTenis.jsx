@@ -125,7 +125,6 @@ export const SlideTenis = () => {
           </div>
         </div>
 
-        {/* Cor */}
         <div className="product-color">
           <p>Cor</p>
           <div className="color-options">
