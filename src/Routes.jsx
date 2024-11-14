@@ -8,7 +8,7 @@ import { ProductViewPage } from "./pages/ProductViewPage";
 export const RoutesApp = () => {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/DetalhesDoProduto" element={<ProductViewPage />} />
