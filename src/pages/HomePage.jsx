@@ -1,21 +1,17 @@
-// import { ProductListing } from "../components/productListing/ProductListing"
-// import { SectionOfertas } from "../components/Section/Section_ofertas/SectionOfertas"
-// import { Slide } from "../components/Slide/Slide"
-
-import { FilterAside } from "../components/aside/FilterAside"
-
-
-// import { SlideTenis } from "../components/SlideTenis/SlideTenis"
+import { SectionOfertas } from "../components/Section/Section_ofertas/SectionOfertas";
+import { Slide } from "../components/Slide/Slide";
+import { SectionCards } from "../components/Section/SectionCards/SectionCards";
+import { Section3 } from "../components/Section/Section3/Section3";
+import { ProductListing } from "../components/productListing/ProductListing";
 
 export const HomePage = () => {
-    return (
-        <>
-        {/* <SlideTenis></SlideTenis> */}
-        {/* <Slide></Slide>
-        <ProductListing></ProductListing>
-        <SectionOfertas></SectionOfertas> */}
-        <FilterAside></FilterAside>
-
-        </>
-    )
-}
+  return (
+    <>
+      <Slide />
+      <SectionCards />
+      <Section3 />
+      <ProductListing />
+      <SectionOfertas />
+    </>
+  );
+};
