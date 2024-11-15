@@ -1,6 +1,7 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
+import "./header.css"
 
 export const Header = () => {
   return (
@@ -41,10 +42,12 @@ export const Header = () => {
 
       <div className="flex flex-row justify-between w-full px-40">
         <div className="flex flex-row gap-5">
-          <Link to="/">Home</Link>
-          <Link to="/">Produtos</Link>
-          <Link to="/">Categorias</Link>
-          <Link to="/">Meus Pedidos</Link>
+          <nav className="navegator">
+            <Link to="/" className="li">Home</Link>
+            <Link to="/produtos" className="li">Produtos</Link>
+            <Link to="/"className="li">Categorias</Link>
+            <Link to="/" className="li">Meus Pedidos</Link>
+          </nav>
         </div>
       </div>
     </header>
