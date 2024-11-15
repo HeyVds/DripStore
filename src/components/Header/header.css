@@ -17,6 +17,7 @@ a {
     left: 0;
     bottom: -10px;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 a:hover::after{
