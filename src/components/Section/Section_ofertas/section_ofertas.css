@@ -61,10 +61,11 @@
   }
 
   .circle img {
-    width: 35.8125rem;
+    width: 600px;
     height: 20.625rem;
     top: -1.25rem;
     left: 1.25rem;
     object-fit: cover;
+    align-items: center;
   }
 }
