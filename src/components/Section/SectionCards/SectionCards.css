@@ -3,9 +3,10 @@
 .collection-section {
   background-color: #f9f9f9;
   font-family: "Inter";
-  padding: 0 10rem;
+  padding: 0 5rem;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .collection-section div h2 {
