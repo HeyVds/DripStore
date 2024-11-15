@@ -20,6 +20,6 @@ a {
     border-radius: 10px;
 }
 
-a:hover::after{
+.li:hover::after{
     width: 100%;
 }
