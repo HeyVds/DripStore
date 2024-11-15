@@ -4,6 +4,7 @@ import { Header } from "./components/Header/Header";
 import { Error } from "./components/error/Error";
 import { LoginPage } from "./pages/LoginPage";
 import { ProductViewPage } from "./pages/ProductViewPage";
+import { ProductListingPage } from "./pages/ProductListingPage";
 
 export const RoutesApp = () => {
   return (
@@ -14,6 +15,7 @@ export const RoutesApp = () => {
         <Route path="/DetalhesDoProduto" element={<ProductViewPage />} />
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/produtos" element={<ProductListingPage />}/>
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>
