@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .collection-section {
-  padding: 10px;
   background-color: #f9f9f9;
   font-family: "Inter";
   padding: 0 10rem;
@@ -14,7 +13,7 @@
   margin-bottom: 20px;
   color: #333;
   font-family: "Inter";
-  aligh-self: left;
+  align-self: left;
 }
 
 .collection1,
@@ -28,13 +27,13 @@
 .container-collection {
   display: flex;
   flex-direction: row;
-  justify-itemns: center;
+  justify-items: center;
 }
 
 .collection-card {
   position: relative;
   width: 395px;
-  height: 207px;
+  height: 251px;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -46,6 +45,7 @@
   padding: 15px;
   color: #fff;
   font-family: "Inter";
+  object-fit: cover;
 }
 
 .collection-card:hover {
@@ -66,11 +66,11 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #d4ffb3;
+  background-color: #e7ff86;
   color: #333;
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 4px 10px;
   border-radius: 50px;
   z-index: 2;
 }
@@ -93,4 +93,5 @@
 .collection-card button:hover {
   background-color: var(--primary);
   color: var(--white);
+  transition: 1s;
 }
