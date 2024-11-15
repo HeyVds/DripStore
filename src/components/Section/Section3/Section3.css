@@ -20,6 +20,7 @@
   }
   
   .collection-item {
+    cursor: pointer;
     text-align: center;
   }
   
