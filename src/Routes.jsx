@@ -5,6 +5,7 @@ import { Error } from "./components/error/Error";
 import { LoginPage } from "./pages/LoginPage";
 import { ProductViewPage } from "./pages/ProductViewPage";
 import { ProductListingPage } from "./pages/ProductListingPage";
+import { RegisterPage } from "./pages/RegisterPage";
 
 export const RoutesApp = () => {
   return (
@@ -17,6 +18,7 @@ export const RoutesApp = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/produtos" element={<ProductListingPage />}/>
         <Route path="/tenis" element={<ProductViewPage />}/>
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>

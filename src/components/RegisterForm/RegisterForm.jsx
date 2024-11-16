@@ -1,25 +1,26 @@
 import React from 'react';
-import './loginform.css';
+import './register.css';
 
-export const LoginForm = () => {
-  return (
-    <>
-    <div className="login-container">
-      <div className="login-form">
-        <h2>Acesse sua conta</h2>
-        <p> Novo cliente? Então registre-se <a href="register">aqui</a>.</p>
+
+export const RegisterForm = () => {
+    return (
+        <>
+        <div className="register-container">
+      <div className="register-form">
+        <h2>Crie sua conta</h2>
+        <p> Já possui uma conta? Entre <a href="login">aqui</a>.</p>
         <form>
-          <label>Login *</label>
-          <input type="text" placeholder="Insira seu login ou email" required />
+          <label>Email *</label>
+          <input type="text" placeholder="Insira seu email" required />
 
           <label>Senha *</label>
           <input type="password" placeholder="Insira sua senha" required />
 
-          <a href="#" className="forgot-password">Esqueci minha senha</a>
+       
 
-          <button type="submit" className="login-button">Acessar Conta</button>
+          <button type="submit" className="register-button">Criar conta</button>
         </form>
-        <div className="social-login">
+        <div className="social-register">
           <p>Ou faça login com</p>
           <div className="social-icons">
             <img src="src/assets/login-image/gmail.png" alt="Gmail" />
@@ -27,11 +28,12 @@ export const LoginForm = () => {
           </div>
         </div>
       </div>
-      <div className="login-image">
+      <div className="register-image">
         <img class= "tenisL" src="src/assets/login-image/tenisL.png"  alt="Shoe 1" />
         <img class= "tenisR" src="src/assets/login-image/tenisR.png" alt="Shoe 1" />
       </div>
     </div>
-    </>
-  );
-};
+        
+        </>
+    )
+}

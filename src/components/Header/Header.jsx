@@ -25,7 +25,7 @@ export const Header = () => {
           className="flex flex-row justify-between gap-5 items-center"
         >
           <a href="#" className="underline text-[#474747] ">
-            Cadastrar
+            <Link to="/register">Cadastrar</Link>
           </a>
 
           <Link to="/login">
