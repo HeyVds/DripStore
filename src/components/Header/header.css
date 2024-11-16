@@ -4,13 +4,21 @@
     color: var(--dark-gray-2);    
 }
 
+
 a {
     position: relative;
+}
+
+a:hover {
+    color: var(--primary);
+    transition: 0.8s;
+    font-weight: 700;
 }
 
 .li::after {
     content: "";
     position: absolute;
+    color: var(--primary);
     background-color: var(--primary);
     height: 3px;
     width: 0;
@@ -22,4 +30,5 @@ a {
 
 .li:hover::after{
     width: 100%;
+    color: var(--primary);
 }
