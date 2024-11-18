@@ -9,7 +9,7 @@ a {
     position: relative;
 }
 
-a:hover {
+.li:hover {
     color: var(--primary);
     transition: 0.8s;
     font-weight: 700;
