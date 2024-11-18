@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section-content-form {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F8FE;
+    font-family: "Inter";
+}
+
+.title-form-criar {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 34.5rem;
+    margin-top: 50px;
+}
+
+.contentainer-form-pessoal {
+    border: 1px solid rgb(98, 0, 255);
+    width: 750px;
+    height: 538px;
+    background-color: var(--white);
+}
+
+.content-form-pessoal {
+    margin: 25px;
+    margin-left: 2rem;
+
+}
+
+.title-line {
+    border: 1px solid red;
+}
+
+
+.title-form-pessoal {
+    margin-left: 10px;
+}
+
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: blue;
+    margin: 10px;
+}
+
+.contentainer-form-entrega {
+    border: 1px solid rgb(9, 255, 0);
+    width: 750px;
+    height: 647px;
+    margin: 15px;
+    background-color: var(--white);
+}
