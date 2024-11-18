@@ -1,9 +1,31 @@
 import { ProductCard } from "../ProductCard/ProductCard";
-import { cardsInfo } from "../../utils/cardsMock";
+import { useEffect, useState } from "react";
 import { Subtitles } from "../Subtitles/Subtitles";
 import "./productlisting.css";
 
 export const ProductListing = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+   
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/products/");
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error("Erro ao buscar produtos:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) return <p>Carregando produtos...</p>;
+
   return (
     <div className="product-listing">
       <div className="header">
@@ -13,16 +35,14 @@ export const ProductListing = () => {
         </a>
       </div>
       <div className="product-grid">
-        {cardsInfo.map((card, index) => (
+      {products.map((product, index) => (
           <ProductCard
-            key={card.id}
-            discountPercentual={index < 2 ? card.discountPercentual : null}
-            category={card.category}
-            productName={card.productName}
-            discountPrice={card.discountPrice}
-            price={card.price}
-            isDiscount={card.isDiscount}
-            url={card.url}
+            discountPercentual={index < 2 ? product.discountPercentual : null}
+            category={product.category}
+            productName={product.productName}
+            discountPrice={product.discountPrice}
+            price={product.price}
+            isDiscount={product.isDiscount}
           />
         ))}
       </div>
