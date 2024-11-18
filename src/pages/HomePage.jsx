@@ -7,11 +7,13 @@ import { ProductListing } from "../components/productListing/ProductListing";
 export const HomePage = () => {
   return (
     <>
-      <Slide />
-      <SectionCards />
-      <Section3 />
-      <ProductListing />
-      <SectionOfertas />
+      <div className="container-home">
+        <Slide />
+        <SectionCards />
+        <Section3 />
+        <ProductListing />
+        <SectionOfertas />
+      </div>
     </>
   );
 };

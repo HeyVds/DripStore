@@ -6,6 +6,7 @@ import { LoginPage } from "./pages/LoginPage";
 import { ProductViewPage } from "./pages/ProductViewPage";
 import { ProductListingPage } from "./pages/ProductListingPage";
 import { RegisterPage } from "./pages/RegisterPage";
+import { CriarConta } from "./components/CriarContaForm/CriarConta";
 
 export const RoutesApp = () => {
   return (
@@ -19,6 +20,7 @@ export const RoutesApp = () => {
         <Route path="/produtos" element={<ProductListingPage />}/>
         <Route path="/produtos/tenis" element={<ProductViewPage />}/>
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="register/criar" element={<CriarConta />}/>
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>

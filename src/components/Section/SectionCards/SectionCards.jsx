@@ -11,7 +11,7 @@ export const SectionCards = () => {
   // 'Coleção Adidas' 'Novo Beats Bass
   return (
     <section className="collection-section">
-      <div>
+      <div className="title-colection-destaque">
         <h2>Coleções em destaque</h2>
       </div>
 
