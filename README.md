@@ -32,8 +32,7 @@
       </ul>
     </li>
     <li><a href="#contribuidores">Contribuidores</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contatos">Contact</a></li>
   </ol>
 </details>
 
@@ -122,11 +121,13 @@ Para utilizar localmente , precisa seguir os requesitos abaixo:
 
 
 <!-- CONTACT -->
-## Contact
+## Contatos
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+<img src="https://img.shields.io/badge/-LinkedIn João Ryan-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/-LinkedIn Victo Mafra-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/-LinkedIn Samuel Chagas-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/-LinkedIn Vinícius Silva-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+<img src="https://img.shields.io/badge/-LinkedIn Rafael-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
