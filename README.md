@@ -104,14 +104,11 @@ Para utilizar localmente , precisa seguir os requesitos abaixo:
 ## Contribuidores
 
 <a href="https://github.com/deryaxnw/"><img src="https://img.shields.io/badge/-João Ryan-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=" alt="GitHub" /></a>
+<a href="https://github.com/HeyVds"><img src="https://img.shields.io/badge/-Victor Mafra-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=" alt="GitHub" /></a>
+<a href="https://github.com/vingenesi"><img src="https://img.shields.io/badge/-Vinícius Silva-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=" alt="GitHub" /></a>
+<a href="https://github.com/samuel-chagas"><img src="https://img.shields.io/badge/-Samuel Chagas-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=" alt="GitHub" /></a>
+<a href="https://github.com/Rafael-0011"><img src="https://img.shields.io/badge/-Rafael-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=" alt="GitHub" /></a>
 
-<img src="https://img.shields.io/badge/-Victor Mafra-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=https://github.com/HeyVds" alt="GitHub" />
-
-<img src="https://img.shields.io/badge/-Vinícius Silva-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=https://github.com/vingenesi" alt="GitHub" />
-
-<img src="https://img.shields.io/badge/-Samuel Chagas-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=https://github.com/samuel-chagas" alt="GitHub" />
-
-<img src="https://img.shields.io/badge/-Rafael-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=https://github.com/Rafael-0011" alt="GitHub" />
 
 
 
