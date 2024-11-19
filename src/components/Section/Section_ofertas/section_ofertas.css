@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .texto-ofertas {
@@ -12,6 +13,7 @@
   height: 21.3125rem;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   .p-ofertas-acima {
     font-size: 0.875rem;
@@ -61,10 +63,9 @@
   }
 
   .circle img {
-    width: 35.8125rem;
+    width: 600px;
     height: 20.625rem;
     top: -1.25rem;
     left: 1.25rem;
-    object-fit: cover;
   }
 }

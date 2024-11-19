@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Inter";
 }
 
-.login-container {
+.register-container {
   background: linear-gradient(135deg, #e3e3ff, #d4c5f9);
   display: flex;
   align-items: center;
@@ -14,7 +20,7 @@ body {
   overflow: hidden;
 }
 
-.login-form {
+.register-form {
   background-color: white;
   border-radius: 8px;
   padding: 30px;
@@ -24,25 +30,27 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.login-form h2 {
+
+
+.register-form h2 {
   font-size: 24px;
   color: black;
   font-weight: bold;
   margin-bottom: 2vh;
 }
 
-.login-form p {
+.register-form p {
   font-size: 14px;
   color: #666;
   margin-bottom: 2vh;
 }
 
-.login-form a {
+.register-form a {
   text-decoration: none;
   text-decoration: underline;
 }
 
-.login-form label {
+.register-form label {
   font-size: 12px;
   color: var(--dark-gray-2);
   display: block;
@@ -50,7 +58,7 @@ body {
   font-weight: 700;
 }
 
-.login-form input {
+.register-form input {
   width: 100%;
   background-color: #f5f5f5;
   padding: 10px;
@@ -59,21 +67,10 @@ body {
   font-size: 14px;
 }
 
-.forgot-password {
-  display: block;
-  text-align: left;
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.forgot-password a {
-  color: #666666;
-}
-
-.login-button {
+.register-button {
   width: 100%;
   padding: 10px;
-  background-color: #c92071;
+  background-color: var(--primary);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -82,25 +79,27 @@ body {
   cursor: pointer;
 }
 
-.login-button:hover {
-  background-color: #ee4266;
+.register-button:hover {
+  background-color: var(--primary);
 }
 
-.social-login {
+.social-register {
   text-align: center;
   justify-content: center;
   margin-top: 2vh;
   display: flex;
   align-items: center;
+  letter-spacing: 1px;
 }
 
-.social-login p {
+.social-register p {
   font-size: 14px;
   color: #666;
 }
 
 .social-icons {
   display: flex;
+  
 }
 
 .social-icons img {
@@ -109,9 +108,10 @@ body {
   cursor: pointer;
   margin-right: 1vh;
   margin-left: 1vh;
+  margin: 15px;
 }
 
-.login-image {
+.register-image {
   width: 500px;
   height: 450px;
   display: flex;
@@ -119,7 +119,7 @@ body {
   justify-content: center;
 }
 
-.login-image img {
+.register-image img {
   width: 256px;
 }
 
@@ -133,4 +133,4 @@ body {
   transform: rotate(8deg);
 }
 
-/* .babado */
+

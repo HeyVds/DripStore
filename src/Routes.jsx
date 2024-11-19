@@ -5,6 +5,9 @@ import { Error } from "./components/error/Error";
 import { LoginPage } from "./pages/LoginPage";
 import { ProductViewPage } from "./pages/ProductViewPage";
 import { Footer } from "./components/Footer/Footer";
+import { ProductListingPage } from "./pages/ProductListingPage";
+import { RegisterPage } from "./pages/RegisterPage";
+import { CriarConta } from "./components/CriarContaForm/CriarConta";
 
 export const RoutesApp = () => {
   return (
@@ -12,9 +15,12 @@ export const RoutesApp = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/DetalhesDoProduto" element={<ProductViewPage />} />
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/produtos" element={<ProductListingPage />} />
+        <Route path="/produtos/tenis" element={<ProductViewPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/register/criar" element={<CriarConta />} />
       </Routes>
       <Footer />
     </BrowserRouter>

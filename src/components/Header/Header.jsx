@@ -1,13 +1,14 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
+import "./header.css"
 
 export const Header = () => {
   return (
     <header className="flex flex-col w-full justify-center items-center py-5">
       <div className="flex flex-row justify-between w-full items-center px-40 py-5">
         <Link to="/">
-          <img src="src/assets/logoHeader.svg" alt="logo" />
+          <img src="../../../public/header-icons/logoHeader.svg" alt="logo" />
         </Link>
         <div className="relative flex items-center w-full max-w-md">
           <input
@@ -24,7 +25,7 @@ export const Header = () => {
           className="flex flex-row justify-between gap-5 items-center"
         >
           <a href="#" className="underline text-[#474747] ">
-            Cadastrar
+            <Link to="/register">Cadastrar</Link>
           </a>
 
           <Link to="/login">
@@ -34,17 +35,19 @@ export const Header = () => {
         </div>
         <div id="cartContainer" className="flex items-center">
           <a href="#">
-            <img src="src/assets/mini-cart.svg" alt="cart" />
+            <img src="../../../public/header-icons/mini-cart.svg" alt="cart" />
           </a>
         </div>
       </div>
 
       <div className="flex flex-row justify-between w-full px-40">
         <div className="flex flex-row gap-5">
-          <Link to="/">Home</Link>
-          <Link to="/">Produtos</Link>
-          <Link to="/">Categorias</Link>
-          <Link to="/">Meus Pedidos</Link>
+          <nav className="navegator">
+            <Link to="/" className="li">Home</Link>
+            <Link to="/produtos" className="li">Produtos</Link>
+            <Link to="/"className="li">Categorias</Link>
+            <Link to="/" className="li">Meus Pedidos</Link>
+          </nav>
         </div>
       </div>
     </header>

@@ -43,35 +43,34 @@ export const Slide = () => {
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="slide">
-              <div className="Text">
-                <p className="p-acima">Melhores ofertas personalizadas</p>
-
-                <h1 className="Text-h1">Queima de stoque Nike 🔥</h1>
-
-                <p className="p-abaixo">
-                  Consequat culpa exercitation mollit nisi excepteur do do
-                  tempor laboris eiusmod irure consectetur.
-                </p>
-                <Button label="Ver Ofertas" size="x-medium" style="primary" />
-              </div>
-
-              <div className="div-img">
-                <div className="Ornament">
-                  <img
-                    src="./src/assets/slide-image/Ornament 11.png"
-                    alt="Ornament"
-                    className="Orn"
-                  />
+            
+              
+                <div className="slide">
+                  <div className="Text">
+                    <p className="p-acima">Melhores ofertas personalizadas</p>
+                    <h1 className="Text-h1">Queima de stoque Nike 🔥</h1>
+                    <p className="p-abaixo">
+                      Consequat culpa exercitation mollit nisi excepteur do do
+                      tempor laboris eiusmod irure consectetur.
+                    </p>
+                    <Button label="Ver Ofertas" size="x-medium" style="primary" />
+                  </div>
+                  <div className="div-img">
+                    <div className="Ornament">
+                      <img
+                        src="./src/assets/slide-image/Ornament 11.png"
+                        alt="Ornament"
+                        className="Orn"
+                      />
+                    </div>
+                    <img
+                      src={item.image}
+                      alt="White-Sneakers"
+                      className="Slide-item"
+                    />
+                  </div>
                 </div>
-
-                <img
-                  src={item.image}
-                  alt="White-Sneakers"
-                  className="Slide-item"
-                />
-              </div>
-            </div>
+            
           </SwiperSlide>
         ))}
       </Swiper>

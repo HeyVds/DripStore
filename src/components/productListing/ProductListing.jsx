@@ -5,7 +5,7 @@ import "./productlisting.css";
 
 export const ProductListing = () => {
   return (
-    <div className="product-listing">
+    <section className="product-listing">
       <div className="header">
         <Subtitles type="secondary">Produtos em alta</Subtitles>
         <a href="/produtos" className="view-all-link">
@@ -26,6 +26,6 @@ export const ProductListing = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };

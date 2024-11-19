@@ -8,7 +8,10 @@ export const Footer = () => {
         <div className="footer-top">
           <section className="sections-footer">
             <Link to="/">
-              <img src="src/assets/logo-footer.svg" alt="logo" />
+              <img
+                src="../../../public/footer-icons/logo-footer.svg"
+                alt="logo"
+              />
             </Link>
             <p className="text-footer">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -18,13 +21,22 @@ export const Footer = () => {
             </p>
             <div className="logos-footer">
               <a href="#">
-                <img src="src/assets/facebook.svg" alt="icone-facebook" />
+                <img
+                  src="../../../public/footer-icons/facebook.svg"
+                  alt="icone-facebook"
+                />
               </a>
               <a href="#">
-                <img src="src/assets/instagram.svg" alt="icone-instagram" />
+                <img
+                  src="../../../public/footer-icons/instagram.svg"
+                  alt="icone-instagram"
+                />
               </a>
               <a href="#">
-                <img src="src/assets/twitter.svg" alt="icone-twitter" />
+                <img
+                  src="../../../public/footer-icons/twitter.svg"
+                  alt="icone-twitter"
+                />
               </a>
             </div>
           </section>
