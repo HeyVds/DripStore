@@ -120,10 +120,14 @@ Para utilizar localmente , precisa seguir os requesitos abaixo:
 <!-- CONTACT -->
 ## Contatos
 
-<img src="https://img.shields.io/badge/-LinkedIn João Ryan-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+<a href="https://www.linkedin.com/in/jo%C3%A3o-ryan-491869279/"><img src="https://img.shields.io/badge/-LinkedIn João Ryan-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" /></a>
+
 <img src="https://img.shields.io/badge/-LinkedIn Victo Mafra-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+
 <img src="https://img.shields.io/badge/-LinkedIn Samuel Chagas-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+
 <img src="https://img.shields.io/badge/-LinkedIn Vinícius Silva-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
+
 <img src="https://img.shields.io/badge/-LinkedIn Rafael-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=LINK-DO-SEU-LINKEDIN" alt="LinkedIn" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
