@@ -10,8 +10,9 @@ export const FormInput = ({ title, placeholder, type = "text", className, ...pro
                 type={type}
                 placeholder={placeholder}
                 className={`input-field ${className}`}
+                required
                 {...props}
             />
         </div>
     );
-};
+}; 
