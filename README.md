@@ -103,7 +103,7 @@ Para utilizar localmente , precisa seguir os requesitos abaixo:
 <!-- CONTRIBUTING -->
 ## Contribuidores
 
-<img src="https://img.shields.io/badge/-João Ryan-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=https://github.com/deryaxnw" alt="GitHub" />
+<a href="https://github.com/deryaxnw/"><img src="https://img.shields.io/badge/-João Ryan-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=" alt="GitHub" /></a>
 
 <img src="https://img.shields.io/badge/-Victor Mafra-181717?style=flat-square&labelColor=181717&logo=github&logoColor=white&link=https://github.com/HeyVds" alt="GitHub" />
 
