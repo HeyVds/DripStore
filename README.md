@@ -49,7 +49,7 @@
 
 ### Objetivo
 
-A DripStore é o projeto final de conclusão de curso, desenvolvido com o propósito de colocar em prática todo o conhecimento adquirido ao longo das aulas. Esta aplicação busca integrar de maneira harmoniosa e funcional as competências em front-end e back-end, resultando em uma plataforma completa, que reflete o esforço e o aprendizado de toda a nossa jornada.
+A Digital Store é o projeto final de conclusão de curso, desenvolvido com o propósito de colocar em prática todo o conhecimento adquirido ao longo das aulas. Esta aplicação busca integrar de maneira harmoniosa e funcional as competências em front-end e back-end, resultando em uma plataforma completa, que reflete o esforço e o aprendizado de toda a nossa jornada.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
