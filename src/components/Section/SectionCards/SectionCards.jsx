@@ -16,7 +16,7 @@ export const SectionCards = () => {
       </div>
 
       <div className="container-collection">
-        <div className="collection1">
+        <div className="collection">
           <div className="collection-card">
             <img src={collection1} alt="collection1" />
 
@@ -25,18 +25,18 @@ export const SectionCards = () => {
           </div>
         </div>
 
-        <div className="collection2">
+        <div className="collection">
           <div className="collection-card">
-            <img src={collection2} alt="collection1" />
+            <img src={collection2} alt="collection2" />
 
             <p>30% OFF</p>
             <button>Comprar</button>
           </div>
         </div>
 
-        <div className="collection3">
+        <div className="collection">
           <div className="collection-card">
-            <img src={collection3} alt="collection1" />
+            <img src={collection3} alt="collection3" />
 
             <p>30% OFF</p>
             <button>Comprar</button>

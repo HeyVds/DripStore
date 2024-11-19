@@ -1,7 +1,6 @@
-import "./criarConta.css"
+import "./criarConta.css";
 import { FormInput } from "../inputs/FormInput";
 import { Button } from "../Button/Button";
-
 
 export const CriarConta = () => {
     return ( 
