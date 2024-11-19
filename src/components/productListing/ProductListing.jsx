@@ -13,6 +13,7 @@ export const ProductListing = () => {
       try {
         const response = await fetch("http://localhost:3000/products/");
         const data = await response.json();
+        console.log(data);
         setProducts(data);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
@@ -40,8 +41,8 @@ export const ProductListing = () => {
             discountPercentual={index < 2 ? product.discountPercentual : null}
             category={product.category}
             productName={product.productName}
-            discountPrice={product.discountPrice}
-            price={product.price}
+            discountPrice={`$${product.discountPrice}`}
+            price={`$${product.price}`}
             isDiscount={product.isDiscount}
           />
         ))}
