@@ -24,6 +24,11 @@ export const CriarConta = () => {
               placeholder="Insira seu email"
               type="email"
             />
+             <FormInput
+              title="Senha *"
+              placeholder="Insira sua senha"
+              type="password"
+            />
             <FormInput title="Celular *" placeholder="Insira seu celular" />
           </div>
         </div>
