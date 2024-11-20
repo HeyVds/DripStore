@@ -5,7 +5,8 @@ import { api } from "../../../service/instance";
 
 export const LoginForm = () => {
 
-  const [hasToken, setHasToken] = React.useState(localStorage.getItem("token"));
+  const [hasToken, setHasToken] = React.useState(localStorage.getItem("authToken"));
+
 
   const [form, setForm] = React.useState({
     email:"",
@@ -16,8 +17,8 @@ export const LoginForm = () => {
   async function handleSubmit(e){
     e.preventDefault();
     const { data } = await api.post("/users/login", form);
-    console.log(data.token)
-    localStorage.setItem("token", data.token);
+    localStorage.setItem("authToken", data.authToken);
+    setHasToken(data.authToken)
   }
 
     function handleChange({target}) {
