@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section-content-form {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F8FE;
+    font-family: "Inter";
+    gap: .625rem;
+}
+
+.title-form-criar {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 34.5rem;
+    margin-top: 50px;
+}
+
+.contentainer-form-pessoal {
+    width: 750px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+.title-line h3{
+    color: var(--dark-gray-2);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter";
+}
+
+.line {
+    margin-top: 20px;
+}
+
+.contentainer-form-entrega {
+    width: 750px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+
+
+.termos {
+    width: 750px;
+    display: flex;
+    margin-top: 10px;
+
+    p {
+        color: var(--dark-gray-2);
+        font-size: 14px;
+    }
+}
+
+input[type="checkbox"]
+{
+  accent-color: #C92071; 
+  width: 22px; 
+  height: 22px; 
+  border: 2px solid #C92071; 
+  border-radius: 1px; 
+  outline: none; 
+  cursor: pointer; 
+  margin-right: 10px;
+  
+}
+
+.button-criar {
+    margin-top: 25px;
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+}

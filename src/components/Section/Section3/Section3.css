@@ -1,49 +1,44 @@
 .section3 {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fc;
-    font-family: 'Inter';
-    font-weight: bold;
-  }
-  
-  .section3 h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 20px;
-   
-  }
-  
-  .collections-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .collection-item {
-    text-align: center;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fc;
+  font-family: "Inter";
+  font-weight: bold;
+}
 
-  .collection-icon:hover {
-    
-    transform: translateY(-10px);
+.section3 h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
-  }
+.collections-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
-  .collection-icon {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    /* border: 1px solid #ddd; */
-    transition: transform 0.3s ease;
+.collection-item {
+  cursor: pointer;
+  text-align: center;
+}
 
-     }
-  
-  .collection-item p {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #333;
-  }
-  
+.collection-icon:hover {
+  transform: translateY(-10px);
+}
+
+.collection-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  transition: transform 0.3s ease;
+}
+
+.collection-item p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
