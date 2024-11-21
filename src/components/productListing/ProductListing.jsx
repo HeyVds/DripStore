@@ -28,7 +28,7 @@ export const ProductListing = () => {
   if (loading) return <p>Carregando produtos...</p>;
 
   return (
-    <div className="product-listing">
+    <section className="product-listing">
       <div className="header">
         <Subtitles type="secondary">Produtos em alta</Subtitles>
         <a href="/produtos" className="view-all-link">
@@ -36,7 +36,11 @@ export const ProductListing = () => {
         </a>
       </div>
       <div className="product-grid">
+<<<<<<< HEAD
       {products.map((product, index) => (
+=======
+        {cardsInfo.slice(0, 8).map((card, index) => (
+>>>>>>> 5759cdc6fbacaaacb2826be712692d90fbf25c3c
           <ProductCard
             discountPercentual={index < 2 ? product.discountPercentual : null}
             category={product.category}
@@ -47,6 +51,6 @@ export const ProductListing = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };

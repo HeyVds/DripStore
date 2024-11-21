@@ -1,40 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .collection-section {
-  padding: 10px;
   background-color: #f9f9f9;
-  font-family: "Inter";
-  padding: 0 10rem;
   display: flex;
+  font-family: "Inter";
+  /* justify-content: center;
+  align-items: center; */
   flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 2rem 10rem;
 }
 
 .collection-section div h2 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
   color: #333;
   font-family: "Inter";
-  aligh-self: left;
+  text-align: left;
 }
 
-.collection1,
-.collection2,
-.collection3 {
-  display: inline-block;
-  margin: 5px;
-  font-family: "Inter";
+.collection {
+  display: flex;
+  flex-direction: row;
 }
 
 .container-collection {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  justify-itemns: center;
+  width: 100%;
 }
 
 .collection-card {
   position: relative;
-  width: 395px;
-  height: 207px;
+  width: 405px;
+  height: 251px;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -46,6 +46,7 @@
   padding: 15px;
   color: #fff;
   font-family: "Inter";
+  object-fit: cover;
 }
 
 .collection-card:hover {
@@ -66,11 +67,11 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #d4ffb3;
+  background-color: #e7ff86;
   color: #333;
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 4px 10px;
   border-radius: 50px;
   z-index: 2;
 }
@@ -93,4 +94,5 @@
 .collection-card button:hover {
   background-color: var(--primary);
   color: var(--white);
+  transition: 1s;
 }
