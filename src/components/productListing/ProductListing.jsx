@@ -36,12 +36,9 @@ export const ProductListing = () => {
         </a>
       </div>
       <div className="product-grid">
-<<<<<<< HEAD
-      {products.map((product, index) => (
-=======
-        {cardsInfo.slice(0, 8).map((card, index) => (
->>>>>>> 5759cdc6fbacaaacb2826be712692d90fbf25c3c
+      {products.slice(0, 8).map((product, index) => (
           <ProductCard
+            key={product.id || index}
             discountPercentual={index < 2 ? product.discountPercentual : null}
             category={product.category}
             productName={product.productName}

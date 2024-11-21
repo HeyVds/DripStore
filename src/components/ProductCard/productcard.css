@@ -5,7 +5,6 @@
   flex-direction: column;
   margin-bottom: 5px;
   cursor: pointer;
-  background-color: var(--light-gray-3);
 }
 
 .product-card:hover {

@@ -1,8 +1,32 @@
 import { SlideTenis } from "../components/SlideTenis/SlideTenis";
 import { ProductCard } from "../components/ProductCard/ProductCard";
-import { cardsInfo } from "../utils/cardsMock";
+import { useEffect, useState } from "react";
 
 export const ProductViewPage = () => {
+
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+   
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/products/");
+        const data = await response.json();
+        console.log(data);
+        setProducts(data);
+      } catch (error) {
+        console.error("Erro ao buscar produtos:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) return <p>Carregando produtos...</p>;
+
   return (
     <>
       <section className="viwePage">
@@ -23,16 +47,16 @@ export const ProductViewPage = () => {
             </a>
           </div>
           <div className="product-grid">
-            {cardsInfo.slice(0, 4).map((card, index) => (
+            {products.slice(0, 4).map((product, index) => (
               <ProductCard
-                key={card.id}
-                discountPercentual={index < 2 ? card.discountPercentual : null}
-                category={card.category}
-                productName={card.productName}
-                discountPrice={card.discountPrice}
-                price={card.price}
-                isDiscount={card.isDiscount}
-                url={card.url}
+                key={product.id}
+                discountPercentual={index < 2 ? product.discountPercentual : null}
+                category={product.category}
+                productName={product.productName}
+                discountPrice={product.discountPrice}
+                price={product.price}
+                isDiscount={product.isDiscount}
+                url={product.url}
               />
             ))}
           </div>
