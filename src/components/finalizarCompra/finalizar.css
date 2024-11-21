@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section-content-finalizar {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F9F8FE;
+    font-family: "Inter";
+    gap: .625rem;
+    justify-content: center;
+}
+
+
+
+.column-finalizar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+
+.title-form-finalizar {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+    width: 400px;
+}
+
+.contentainer-form-pessoal {
+    width: 750px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+.title-line h3{
+    color: var(--dark-gray-2);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter";
+}
+
+.line {
+    margin-top: 20px;
+}
+
+.contentainer-form-entrega {
+    width: 750px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+
+
+.termos {
+    width: 750px;
+    display: flex;
+    margin-top: 10px;
+
+    p {
+        color: var(--dark-gray-2);
+        font-size: 14px;
+    }
+}
+
+
+
+.button-finalizar {
+    margin-top: 25px;
+    display: flex;
+    margin-right: 4rem;
+    width: 100%;
+}
+
+
+.informe-pagamento {
+    width: 750px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+.title-pag {
+    color: var(--dark-gray-2);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.radio-pagamento {
+    display: flex;
+    gap: .3125rem;
+    color: var(--dark-gray-2);
+}
+
+input[type="radio"] 
+{
+  accent-color: #C92071; 
+  width: 22px; 
+  height: 22px; 
+  border: 2px solid #C92071; 
+  border-radius: 1px; 
+  outline: none; 
+  cursor: pointer; 
+  margin: auto 10px;
+  
+}
+
+.cred-cartao {
+    display: flex;
+    gap: 16px;
+}
+
+
+.preço-pag {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+
+    p {
+        font-size: 18px;
+        color: var(--dark-gray);
+        font-weight: 700;
+    }
+    span {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primary);
+    }
+}
+.pag {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: end;
+
+    span {
+        font-size: 12px;
+        color: var(--light-gray);
+        letter-spacing: 1px;
+    }
+}
+
+.resumo {
+    border: 1px solid red;
+    width: 468px;
+    height: 600px;
+    margin-top: 8.6rem;
+    }
+
+    .title-line-resumo {
+        color: var(--dark-gray-2);
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Inter";
+        margin-top: 2px;
+    }
+
+    .body-resumo {
+        padding: 20px;
+
+    }
+
+    .tenis-nike {
+        width: 408px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        margin-left: 1.9rem;
+        gap: 16px;
+
+    }
+
+    .mini-tenis {
+        width: 71.18px;
+        height: 58px;
+        background-color: #E2E3FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            mix-blend-mode: darken;
+            width: 50.63px;
+            height: 25.19px;
+            object-fit: cover;
+        }
+    }
+
+    .mini-tenis-span {
+        width: 317.82px;
+        span {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark-gray);
+        }
+    }
+
+    .totais {
+        padding: 30px;
+        gap: 80px;
+    }
+   
+    .totais-space {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .sub {
+        font-size: 14px;
+        color: var(--light-gray);
+    }
+
+    .sub-preco{
+        font-size: 14px;
+        font-weight: 500;
+    }
