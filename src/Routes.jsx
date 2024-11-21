@@ -8,6 +8,9 @@ import { Footer } from "./components/Footer/Footer";
 import { ProductListingPage } from "./pages/ProductListingPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { CriarConta } from "./components/CriarContaForm/CriarConta";
+import { UserPage } from "./pages/UserPage";
+import { MinhasInformacoes } from "./components/User/MinhasInformacoes/MinhasInformacoes";
+import { MeusPedidos } from "./components/User/MeusPedidos/MeusPedidos";
 
 export const RoutesApp = () => {
   return (
@@ -21,6 +24,11 @@ export const RoutesApp = () => {
         <Route path="/produtos/tenis" element={<ProductViewPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/register/criar" element={<CriarConta />} />
+        <Route path="/user" element={<UserPage />}>
+          <Route path="infos" element={<MinhasInformacoes />} />
+          <Route path="meuspedidos" element={<MeusPedidos />} />
+          {/* <Route path="metodos-de-pagamentos" element={<MetodosDePagamento />} /> */}
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
