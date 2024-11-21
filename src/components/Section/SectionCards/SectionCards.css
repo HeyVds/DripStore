@@ -7,17 +7,19 @@
   /* justify-content: center;
   align-items: center; */
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
-  padding: 2rem 10rem;
+  padding: 1rem 2rem;
 }
 
 .collection-section div h2 {
-  font-size: 1.8rem;
-  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
   font-family: "Inter";
-  text-align: left;
-}
+  color: var(--dark-gray-2);
+  
+} 
 
 .collection {
   display: flex;

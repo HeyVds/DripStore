@@ -34,7 +34,7 @@ export const Header = () => {
           <a href="#" className=""></a>
         </div>
         <div id="cartContainer" className="flex items-center">
-          <a href="#">
+          <a href="/Cart">
             <img src="../../../public/header-icons/mini-cart.svg" alt="cart" />
           </a>
         </div>
