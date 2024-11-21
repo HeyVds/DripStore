@@ -22,7 +22,6 @@ export const CriarConta = () => {
       complemento: ""
     })
     
-    const [error, setError] = React.useState(false);
 
 
   function handleSubmit(e) {
