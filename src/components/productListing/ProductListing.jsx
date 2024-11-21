@@ -13,7 +13,7 @@ export const ProductListing = () => {
         </a>
       </div>
       <div className="product-grid">
-        {cardsInfo.map((card, index) => (
+        {cardsInfo.slice(0, 8).map((card, index) => (
           <ProductCard
             key={card.id}
             discountPercentual={index < 2 ? card.discountPercentual : null}
