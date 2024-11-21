@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer/Footer";
 import { ProductListingPage } from "./pages/ProductListingPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { CriarConta } from "./components/CriarContaForm/CriarConta";
+import { CartPage} from "./pages/CartPage";
 
 export const RoutesApp = () => {
   return (
@@ -21,6 +22,7 @@ export const RoutesApp = () => {
         <Route path="/produtos/tenis" element={<ProductViewPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/register/criar" element={<CriarConta />} />
+        <Route path="/Cart" element={<CartPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
