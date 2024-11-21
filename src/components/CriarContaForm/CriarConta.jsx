@@ -7,6 +7,7 @@ import { api } from "../../../service/instance";
 
 
 export const CriarConta = () => {
+    
 
     const [data, setData] = React.useState({
       name: "",
@@ -20,7 +21,8 @@ export const CriarConta = () => {
       cep:"",
       complemento: ""
     })
-  
+    
+    const [error, setError] = React.useState(false);
 
 
   function handleSubmit(e) {
@@ -37,6 +39,7 @@ export const CriarConta = () => {
     });
   }
   console.log(data)
+
 
   return (
     <section className="section-content-form">
