@@ -1,7 +1,7 @@
 import { ProductCard } from "../ProductCard/ProductCard";
 import { cardsInfo } from "../../utils/cardsMock";
 import { Subtitles } from "../Subtitles/Subtitles";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./productlisting.css";
 
 export const ProductListing = () => {
