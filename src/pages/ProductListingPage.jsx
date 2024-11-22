@@ -48,7 +48,7 @@ export const ProductListingPage = () => {
         <FilterAside />
 
         <div className="product-grid-Listing">
-          {cardsInfo.slice(0, 15).map((product, index) => (
+          {products.slice(0, 15).map((product, index) => (
             <ProductCard
               key={product.id}
               discountPercentual={index < 2 ? product.discountPercentual : null}

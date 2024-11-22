@@ -1,8 +1,10 @@
 import "./productcard.css";
 import tenisImg from "../../assets/slide-image/product.png";
+import { Link } from "react-router-dom";
 
 export const ProductCard = (props) => {
   return (
+    <Link to={"/produtos/tenis"}>
     <div className="product-card">
       <div className="product-card-image">
         {props.discountPercentual && (
@@ -27,5 +29,6 @@ export const ProductCard = (props) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };

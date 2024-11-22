@@ -7,9 +7,8 @@
   /* justify-content: center;
   align-items: center; */
   flex-direction: column;
-  gap: 10px;
   width: 100%;
-  padding: 0rem 10rem;
+  padding: 5rem 10rem;
 }
 
 .collection-section div h2 {
@@ -27,15 +26,16 @@
 
 .container-collection {
   display: flex;
-  justify-content: space-between;
+  gap: 35px;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
 }
 
 .collection-card {
   position: relative;
-  width: 405px;
-  height: 251px;
+  width: 645px;
+  height: 390px;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -66,11 +66,11 @@
 
 .collection-card p {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   background-color: #e7ff86;
   color: #333;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 4px 10px;
   border-radius: 50px;
@@ -79,17 +79,19 @@
 
 .collection-card button {
   position: relative;
+  left: 10px;
+  bottom: 20px;
   color: var(--primary);
   background-color: var(--white);
   border: none;
-  padding: 10px 15px;
+  padding: 13px 15px;
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 1;
-  width: 50%;
+  width: 35%;
 }
 
 .collection-card button:hover {

@@ -1,6 +1,7 @@
 import { SlideTenis } from "../components/SlideTenis/SlideTenis";
 import { ProductCard } from "../components/ProductCard/ProductCard";
 import { useEffect, useState } from "react";
+import { Subtitles } from "../components/Subtitles/Subtitles";
 
 export const ProductViewPage = () => {
 
@@ -41,7 +42,7 @@ export const ProductViewPage = () => {
 
         <div className="product-listing">
           <div className="header">
-            <div className="text-prod">Produtos Relacionados</div>
+          <Subtitles type="secondary">Produtos em alta</Subtitles>
             <a href="/produtos" className="view-all-link">
               Ver todos ➝
             </a>
