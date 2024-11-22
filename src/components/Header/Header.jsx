@@ -1,7 +1,7 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
-import "./header.css"
+import "./header.css";
 
 export const Header = () => {
   return (
@@ -34,7 +34,7 @@ export const Header = () => {
           <a href="#" className=""></a>
         </div>
         <div id="cartContainer" className="flex items-center">
-          <a href="#">
+          <a href="/Cart">
             <img src="../../../public/header-icons/mini-cart.svg" alt="cart" />
           </a>
         </div>
@@ -43,10 +43,18 @@ export const Header = () => {
       <div className="flex flex-row justify-between w-full px-40">
         <div className="flex flex-row gap-5">
           <nav className="navegator">
-            <Link to="/" className="li">Home</Link>
-            <Link to="/produtos" className="li">Produtos</Link>
-            <Link to="/"className="li">Categorias</Link>
-            <Link to="/" className="li">Meus Pedidos</Link>
+            <Link to="/" className="li">
+              Home
+            </Link>
+            <Link to="/produtos" className="li">
+              Produtos
+            </Link>
+            <Link to="/" className="li">
+              Categorias
+            </Link>
+            <Link to="/user/meuspedidos" className="li">
+              Meus Pedidos
+            </Link>
           </nav>
         </div>
       </div>

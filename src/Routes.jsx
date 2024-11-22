@@ -12,6 +12,7 @@ import { UserPage } from "./pages/UserPage";
 import { MinhasInformacoes } from "./components/User/MinhasInformacoes/MinhasInformacoes";
 import { MeusPedidos } from "./components/User/MeusPedidos/MeusPedidos";
 import { Finalizar } from "./components/finalizarCompra/Finalizar";
+import { CartPage } from "./pages/CartPage";
 
 export const RoutesApp = () => {
   return (
@@ -31,6 +32,7 @@ export const RoutesApp = () => {
           <Route path="meuspedidos" element={<MeusPedidos />} />
           {/* <Route path="metodos-de-pagamentos" element={<MetodosDePagamento />} /> */}
         </Route>
+        <Route path="/Cart" element={<CartPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
