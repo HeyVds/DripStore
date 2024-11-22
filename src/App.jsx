@@ -1,12 +1,12 @@
-import "./App.css";
-
-import { RoutesApp } from "./Routes";
+import './App.css'
+import { HomePage } from './pages/HomePage';
 
 
 export const App = () => {
+
   return (
     <>
-      <RoutesApp />
+    <HomePage></HomePage>
     </>
-  );
+  )
 };
