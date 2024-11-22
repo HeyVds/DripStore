@@ -3,15 +3,15 @@ import { ProductCard } from "../components/ProductCard/ProductCard";
 import { useEffect, useState } from "react";
 
 export const ProductViewPage = () => {
-
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-   
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/products/");
+        const response = await fetch(
+          "https://ds-api-5owi.onrender.com/products/"
+        );
         const data = await response.json();
         console.log(data);
         setProducts(data);
@@ -50,7 +50,9 @@ export const ProductViewPage = () => {
             {products.slice(0, 4).map((product, index) => (
               <ProductCard
                 key={product.id}
-                discountPercentual={index < 2 ? product.discountPercentual : null}
+                discountPercentual={
+                  index < 2 ? product.discountPercentual : null
+                }
                 category={product.category}
                 productName={product.productName}
                 discountPrice={product.discountPrice}
