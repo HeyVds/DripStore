@@ -12,7 +12,7 @@ import { UserPage } from "./pages/UserPage";
 import { MinhasInformacoes } from "./components/User/MinhasInformacoes/MinhasInformacoes";
 import { MeusPedidos } from "./components/User/MeusPedidos/MeusPedidos";
 import { Finalizar } from "./components/finalizarCompra/Finalizar";
-import { CartPage} from "./pages/CartPage";
+import { CartPage } from "./pages/CartPage";
 
 export const RoutesApp = () => {
   return (
