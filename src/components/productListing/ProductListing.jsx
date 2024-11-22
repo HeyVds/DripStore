@@ -1,6 +1,7 @@
 import { ProductCard } from "../ProductCard/ProductCard";
 import { useEffect, useState } from "react";
 import { Subtitles } from "../Subtitles/Subtitles";
+// import { useEffect, useState } from "react";
 import "./productlisting.css";
 
 export const ProductListing = () => {

@@ -13,10 +13,7 @@ export const MeusPedidos = () => {
           <hr className="line-my-orders" />
           <div className="item-my-orders">
             <div className="detail-order">
-              <img
-                src="../../../../public/SlideTenis-image/slide1.png"
-                alt="shoe"
-              />
+              <img src="/SlideTenis-image/slide1.png" alt="shoe" />
               <div className="text-detail-order">
                 <p className="text-n-order">Pedido n°: 211231421</p>
                 <p className="text-order">
@@ -30,10 +27,7 @@ export const MeusPedidos = () => {
           <hr className="line-my-orders" />
           <div className="item-my-orders">
             <div className="detail-order">
-              <img
-                src="../../../../public/SlideTenis-image/slide1.png"
-                alt="shoe"
-              />
+              <img src="/SlideTenis-image/slide1.png" alt="shoe" />
               <div className="text-detail-order">
                 <p className="text-n-order">Pedido n°: 211231421</p>
                 <p className="text-order">
@@ -47,10 +41,7 @@ export const MeusPedidos = () => {
           <hr className="line-my-orders" />
           <div className="item-my-orders">
             <div className="detail-order">
-              <img
-                src="../../../../public/SlideTenis-image/slide1.png"
-                alt="shoe"
-              />
+              <img src="/SlideTenis-image/slide1.png" alt="shoe" />
               <div className="text-detail-order">
                 <p className="text-n-order">Pedido n°: 211231421</p>
                 <p className="text-order">
