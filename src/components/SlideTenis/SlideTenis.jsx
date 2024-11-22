@@ -4,7 +4,6 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Button } from "../Button/Button";
 import { Icon } from "@iconify/react";
 
-
 import "./slideTenis.css";
 
 export const SlideTenis = () => {
@@ -13,10 +12,10 @@ export const SlideTenis = () => {
   const [selectedColor, setSelectedColor] = useState(null);
 
   const images = [
-    ("../../../public/SlideTenis-image/slide1.png"),
-    ("../../../public/SlideTenis-image/slide2.png"),
-    ("../../../public/SlideTenis-image/slide3.png"),
-    ("../../../public/SlideTenis-image/slide4.png"),
+    "/SlideTenis-image/slide1.png",
+    "/SlideTenis-image/slide2.png",
+    "/SlideTenis-image/slide3.png",
+    "/SlideTenis-image/slide4.png",
   ];
 
   const colorToIndexMap = {
