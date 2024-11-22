@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="flex flex-col w-full justify-center items-center py-5">
       <div className="flex flex-row justify-between w-full items-center px-40 py-5">
         <Link to="/">
-          <img src="../../../public/header-icons/logoHeader.svg" alt="logo" />
+          <img src="/header-icons/logoHeader.svg" alt="logo" />
         </Link>
         <div className="relative flex items-center w-full max-w-md">
           <input
@@ -35,7 +35,7 @@ export const Header = () => {
         </div>
         <div id="cartContainer" className="flex items-center">
           <a href="/Cart">
-            <img src="../../../public/header-icons/mini-cart.svg" alt="cart" />
+            <img src="/header-icons/mini-cart.svg" alt="cart" />
           </a>
         </div>
       </div>
