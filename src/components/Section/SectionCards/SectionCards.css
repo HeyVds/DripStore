@@ -9,7 +9,7 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0rem 10rem;
 }
 
 .collection-section div h2 {
@@ -18,8 +18,7 @@
   margin-bottom: 20px;
   font-family: "Inter";
   color: var(--dark-gray-2);
-  
-} 
+}
 
 .collection {
   display: flex;

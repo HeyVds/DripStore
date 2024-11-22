@@ -1,7 +1,7 @@
 import { ProductCard } from "../ProductCard/ProductCard";
 import { cardsInfo } from "../../utils/cardsMock";
 import "./Cart.css";
-import Imagem from "../../assets/slide-image/White-Sneakers-PNG-Clipart 1.png"; 
+import Imagem from "../../assets/slide-image/White-Sneakers-PNG-Clipart 1.png";
 
 export const Cart = () => {
   return (
@@ -13,7 +13,7 @@ export const Cart = () => {
         <div className="cart-items">
           <div className="cart-item">
             <img
-              src={Imagem} 
+              src={Imagem}
               alt="Tênis Nike Revolution 6 Next Nature Masculino"
               className="item-image"
             />
@@ -30,7 +30,8 @@ export const Cart = () => {
               <button className="quantity-btn">+</button>
             </div>
             <div className="item-price">
-              <p className="price-unitario">R$ 219,00</p>
+              <p className="price-unitario">R$ 300,00</p>
+              <p className="price-total">R$ 219,00</p>
             </div>
           </div>
           <div className="discount-shipping">
