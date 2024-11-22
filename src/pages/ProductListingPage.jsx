@@ -11,7 +11,7 @@ export const ProductListingPage = () => {
    
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/products/");
+        const response = await fetch("https://ds-api-5owi.onrender.com/products/");
         const data = await response.json();
         console.log(data);
         setProducts(data);
@@ -57,7 +57,6 @@ export const ProductListingPage = () => {
               discountPrice={product.discountPrice}
               price={product.price}
               isDiscount={product.isDiscount}
-              url={product.url}
             />
           ))}
         </div>

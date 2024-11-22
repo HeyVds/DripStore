@@ -7,11 +7,6 @@
   cursor: pointer;
 }
 
-.product-card:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
 .product-card-image {
   width: 30vh;
   height: 33vh;

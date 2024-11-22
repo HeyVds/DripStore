@@ -1,6 +1,8 @@
 .section3 {
   text-align: center;
   padding: 20px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #f8f9fc00;
   font-family: "Inter";
   font-weight: bold;
@@ -28,6 +30,8 @@
 
 .collection-icon svg {
   fill: #8F8F8F;
+  width: 100%;
+  height: 100px;
 }
 
 .collection-icon svg:hover {
@@ -39,16 +43,19 @@
 }
 
 .collection-icon {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   padding: 10px;
   transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .collection-icon img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: contain; /* ou object-fit: cover; dependendo do seu caso */
 }
 
@@ -56,6 +63,6 @@
 
 .collection-item p {
   margin-top: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
   color: #333;
 }
