@@ -8,10 +8,11 @@ export const ProductListing = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-   
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/products/");
+        const response = await fetch(
+          "https://ds-api-5owi.onrender.com/products/"
+        );
         const data = await response.json();
         console.log(data);
         setProducts(data);
@@ -36,7 +37,7 @@ export const ProductListing = () => {
         </a>
       </div>
       <div className="product-grid">
-      {products.slice(0, 8).map((product, index) => (
+        {products.slice(0, 8).map((product, index) => (
           <ProductCard
             key={product.id || index}
             discountPercentual={index < 2 ? product.discountPercentual : null}

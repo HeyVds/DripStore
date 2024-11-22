@@ -3,8 +3,10 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
+  align-items: center;
+  margin-bottom: 30px;
   cursor: pointer;
+  background-color: var(--light-gray-3);
 }
 
 .product-card:hover {
@@ -13,9 +15,9 @@
 }
 
 .product-card-image {
-  width: 30vh;
-  height: 33vh;
-  background-color: white;
+  width: 100%;
+  height: 321px;
+  background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -41,12 +43,6 @@
   color: var(--white);
   top: -10px;
   left: -10px;
-}
-
-.product-card-image:hover img {
-  transform: rotate(30deg);
-  transition: transform 0.5s ease-in-out;
-  /* rotaciona a imagem ao passar o mouse */
 }
 
 .product-card-info {
