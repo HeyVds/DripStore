@@ -1,9 +1,9 @@
 import './Section3.css';
-import camisetaImg from '../../../assets/Section3/Camisetas.png';
-import calcaImg    from '../../../assets/Section3/Calças.png';
-import Bones       from '../../../assets/Section3/Calças.png';
-import headphoneImg from '../../../assets/Section3/Headphones.png';
-import tenisImg    from '../../../assets/Section3/Tenis.png';
+import Camiseta from '../../../assets/Section3/Camisetas.jsx';
+// import Bones from '../../../assets/Section3/Calcas.jsx';
+import Headphone from '../../../assets/Section3/HeadPhones.jsx';
+import Tenis from '../../../assets/Section3/Tenis.jsx';
+import Calcas from '../../../assets/Section3/Calcas.jsx';
 
 export const Section3 = () => {
   return (
@@ -11,23 +11,33 @@ export const Section3 = () => {
       <h2>Coleções em destaque</h2>
       <div className="collections-list">
         <div className="collection-item">
-          <img src={camisetaImg} alt="Camisetas" className="collection-icon" />
+          <div className="collection-icon">
+            <Camiseta/>
+          </div>
           <p>Camisetas</p>
         </div>
         <div className="collection-item">
-          <img src={calcaImg} alt="Calças" className="collection-icon" />
+          <div className="collection-icon">
+          <Calcas/>
+          </div>
           <p>Calças</p>
         </div>
         <div className="collection-item">
-          <img src={Bones} alt="Bermudas" className="collection-icon" />
+          <div className="collection-icon">
+          <Calcas/>
+          </div>
           <p>Bermudas</p>
         </div>
         <div className="collection-item">
-          <img src={headphoneImg} alt="Headphones" className="collection-icon" />
+          <div className="collection-icon">
+            <Headphone />
+          </div>
           <p>Headphones</p>
         </div>
         <div className="collection-item">
-          <img src={tenisImg} alt="Tênis" className="collection-icon" />
+          <div className="collection-icon">
+            <Tenis/>
+          </div>
           <p>Tênis</p>
         </div>
       </div>

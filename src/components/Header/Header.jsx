@@ -1,14 +1,14 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
-import "./header.css"
+import "./header.css";
 
 export const Header = () => {
   return (
     <header className="flex flex-col w-full justify-center items-center py-5">
       <div className="flex flex-row justify-between w-full items-center px-40 py-5">
         <Link to="/">
-          <img src="../../../public/header-icons/logoHeader.svg" alt="logo" />
+          <img src="/header-icons/logoHeader.svg" alt="logo" />
         </Link>
         <div className="relative flex items-center w-full max-w-md">
           <input
@@ -34,8 +34,8 @@ export const Header = () => {
           <a href="#" className=""></a>
         </div>
         <div id="cartContainer" className="flex items-center">
-          <a href="#">
-            <img src="../../../public/header-icons/mini-cart.svg" alt="cart" />
+          <a href="/Cart">
+            <img src="/header-icons/mini-cart.svg" alt="cart" />
           </a>
         </div>
       </div>
@@ -43,10 +43,18 @@ export const Header = () => {
       <div className="flex flex-row justify-between w-full px-40">
         <div className="flex flex-row gap-5">
           <nav className="navegator">
-            <Link to="/" className="li">Home</Link>
-            <Link to="/produtos" className="li">Produtos</Link>
-            <Link to="/"className="li">Categorias</Link>
-            <Link to="/" className="li">Meus Pedidos</Link>
+            <Link to="/" className="li">
+              Home
+            </Link>
+            <Link to="/produtos" className="li">
+              Produtos
+            </Link>
+            <Link to="/" className="li">
+              Categorias
+            </Link>
+            <Link to="/user/meuspedidos" className="li">
+              Meus Pedidos
+            </Link>
           </nav>
         </div>
       </div>
